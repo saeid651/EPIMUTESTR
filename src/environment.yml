@@ -1,0 +1,50 @@
+name: pyEPI
+channels:
+  - bioconda
+  - defaults
+  - conda-forge
+dependencies:
+  - blas
+  - bzip2
+  - ca-certificates
+  - certifi
+  - curl
+  - intel-openmp
+  - joblib
+  - krb5
+  - libcurl
+  - libcxx
+  - libcxxabi
+  - libdeflate
+  - libedit
+  - libffi
+  - libgfortran
+  - libssh2
+  - llvm-openmp
+  - mkl
+  - mkl-service
+  - mkl_fft
+  - mkl_random
+  - ncurses
+  - numpy
+  - numpy-base
+  - openssl
+  - pandas
+  - pip=19.3.1
+  - pysam=0.15.3
+  - python=3.7.5
+  - python-dateutil
+  - pytz
+  - readline
+  - scikit-learn
+  - scipy
+  - setuptools
+  - six
+  - skrebate
+  - sqlite
+  - tk
+  - wheel
+  - xz
+  - zlib
+prefix: /anaconda3/envs/pyEPI
+
