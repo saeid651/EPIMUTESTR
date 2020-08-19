@@ -59,7 +59,7 @@ def Cal_EA(gene_ea, way):
     return ea_out
 
 
-# fill the matrix by EA score of somatic mutations
+# fill the matrix by EA score of germline mutations
 def EA_DMatrix_Germline(vcf_path, index_path, way = 'pEA'):
     vcf_file = VariantFile(vcf_path,index_filename=index_path)
     # Get sample ids and gene names
@@ -103,7 +103,7 @@ def EA_DMatrix_Germline(vcf_path, index_path, way = 'pEA'):
                 dmatrix.loc[sample, gene] = Cal_EA(gene_ea_merged, way)
     return dmatrix
 
-# fill the matrix by EA score of germline mutations
+# fill the matrix by EA score of somatic mutations
 def EA_DMatrix_Somatic(vcf_path, index_path):
     vcf_file = VariantFile(vcf_path,index_filename=index_path)
     # Get sample ids and gene names
